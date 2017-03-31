@@ -1,0 +1,56 @@
+<template name="login">
+<div class="login-page">
+  <div class="form">
+   <h4> Welcome to Tupoint</h4>
+    <form class="register-form">
+      <input type="text" placeholder="name"/>
+      <input type="password" placeholder="password"/>
+      <input type="text" placeholder="email address"/>
+      <button>create</button>
+      <p class="message">Already registered? <a href="#">Sign In</a></p>
+    </form>
+    <form class="login-form">
+      <input type="text" placeholder="username"/>
+      <input type="password" placeholder="password"/>
+      <button id='btnlogin'>login</button>
+      <p class="message">Not registered? <a href="#">Create an account</a></p>
+    </form>
+  </div>
+</div>
+</template>
+
+<template name="Home">
+  {{> Nav}}
+
+  <h1>Home</h1>
+
+  <p>
+    Data Title: {{title}}
+  </p>
+</template>
+
+<template name="One">
+  {{> Nav}}
+
+  <h1>Page One</h1>
+</template>
+
+<template name="two">
+  {{> Nav}}
+
+  <h1>Page Two</h1>
+</template>
+
+<template name="Nav">
+  <ul>
+    <li>
+      <a href="/">Home</a>
+    </li>
+    <li>
+      <a href="/one">Page One</a>
+    </li>
+    <li>
+      <a href="/two">Page Two</a>
+    </li>
+  </ul>
+</template>
